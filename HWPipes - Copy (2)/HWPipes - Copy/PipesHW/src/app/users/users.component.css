@@ -1,0 +1,43 @@
+.inputs {
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .button {
+    padding: 5px 10px;
+    background-color: #0c0c0c;
+    border-radius: 15%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .userlist {
+    margin-top: 20px;
+  }
+  
+  .user {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .deletebutton,
+  .editbutton {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #42080e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .editbutton {
+    background-color: #ffc107;
+  }
+  

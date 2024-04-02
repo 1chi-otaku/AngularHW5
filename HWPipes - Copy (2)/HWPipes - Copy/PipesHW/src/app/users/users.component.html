@@ -1,0 +1,17 @@
+<div class="inputs">
+    <input class="input" type="text" placeholder="Name" [(ngModel)]="newUser.name">
+    <input class="input" type="number" placeholder="Salary" [(ngModel)]="newUser.salary">
+    <input class="input" type="date" [(ngModel)]="newUser.date">
+    <button class="button" (click)="addUser()">Add</button>
+    <button class="button" (click)="saveUser()" *ngIf="editingUserIndex !== -1">Save</button>
+</div>
+
+<div class="userlist">
+    <div class="user" *ngFor="let user of users; let i = index">
+        <p>Name: {{ user.name |  titlecase}}</p>
+        <p>Salary: {{ user.salary | currency:'USD':true:'1.2-2' }}</p>
+        <p>Date: {{ user.date | date:'shortDate' }}</p>
+        <button class="deletebutton" (click)="deleteUser(i)">Delete</button>
+        <button class="editbutton" (click)="editUser(i)">Edit</button>
+    </div>
+</div>
